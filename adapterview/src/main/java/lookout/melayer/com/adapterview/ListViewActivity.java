@@ -8,9 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class ListViewActivity extends AppCompatActivity {
 
     ListView listView;
     TextView textView;
@@ -30,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Bundle bundle=new Bundle();
                 bundle.putString("id",adapter.getItem(position));
-                startActivity(new Intent(MainActivity.this,Main2Activity.class)
+                startActivity(new Intent(ListViewActivity.this,RecyclerViewActivity.class)
                 .putExtras(bundle));
-                //Toast.makeText(MainActivity.this, adapter.getItem(position), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(ListViewActivity.this, adapter.getItem(position), Toast.LENGTH_SHORT).show();
 
             }
         });
