@@ -1,5 +1,6 @@
 package android.codekul.com.decandroid;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
        btnLogin.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               if (userName.getText().toString().isEmpty())
+            /*   if (userName.getText().toString().isEmpty())
                {
 
                }
@@ -43,13 +44,24 @@ public class MainActivity extends AppCompatActivity {
                }
                else {
                    txtMessage.setText(userName.getText() + " " + password.getText());
-               }
+               }*/
+               Intent intent=new Intent(MainActivity.this,RelativeLayoutActivity.class);
+               startActivityForResult(intent,2);
                }
        });
 
         Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
     }
 
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode==2)
+        {
+            Toast.makeText(this, data.getStringExtra("msg"), Toast.LENGTH_SHORT).show();
+        }
+    }
 
     @Override
     protected void onStart() {

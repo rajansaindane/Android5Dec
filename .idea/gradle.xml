@@ -8,8 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/adapterview" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buttonsandbox" />
+            <option value="$PROJECT_DIR$/imagedemo" />
+            <option value="$PROJECT_DIR$/intentdemo" />
             <option value="$PROJECT_DIR$/interactivity" />
             <option value="$PROJECT_DIR$/layouts" />
           </set>

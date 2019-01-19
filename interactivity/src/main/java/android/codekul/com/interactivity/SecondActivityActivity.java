@@ -3,6 +3,7 @@ package android.codekul.com.interactivity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ public class SecondActivityActivity extends AppCompatActivity {
         bundle=getIntent().getExtras();
         if (bundle!=null)
         {
+            Log.i("@SecondActivity","bundle data=====>"+bundle.getString("from"));
             Toast.makeText(this, bundle.getString("from"), Toast.LENGTH_SHORT).show();
         }
         buttonNext=findViewById(R.id.btnSecondCallThird);
