@@ -11,10 +11,12 @@
             <option value="$PROJECT_DIR$/adapterview" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buttonsandbox" />
+            <option value="$PROJECT_DIR$/fragmentdemo" />
             <option value="$PROJECT_DIR$/imagedemo" />
             <option value="$PROJECT_DIR$/intentdemo" />
             <option value="$PROJECT_DIR$/interactivity" />
             <option value="$PROJECT_DIR$/layouts" />
+            <option value="$PROJECT_DIR$/navigationdrawerdemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
