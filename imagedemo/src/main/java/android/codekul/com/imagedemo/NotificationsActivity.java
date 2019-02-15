@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import static android.content.Context.NOTIFICATION_SERVICE;
+
 public class NotificationsActivity extends AppCompatActivity {
 
     @Override

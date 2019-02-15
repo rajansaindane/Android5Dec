@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/interactivity" />
             <option value="$PROJECT_DIR$/layouts" />
             <option value="$PROJECT_DIR$/navigationdrawerdemo" />
+            <option value="$PROJECT_DIR$/notifications" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
